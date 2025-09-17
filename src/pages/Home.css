@@ -1,0 +1,79 @@
+/* Search Results UI improvements */
+.search-results-card {
+  position: relative;
+  min-height: 340px;
+}
+.search-placeholder {
+  color: #fff;
+  background: rgba(30,32,40,0.55);
+  border-radius: 14px;
+  padding: 32px 0;
+  margin: 32px auto 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 12px #0002;
+}
+.search-guidance {
+  color: #fff;
+  background: rgba(255,76,76,0.12);
+  border-radius: 10px;
+  padding: 10px 0 8px 0;
+  margin: 18px auto 0 auto;
+  font-size: 1.05rem;
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 8px #ff4c4c22;
+}
+
+body, .home-bg {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #181818 60%, #232526 100%);
+  animation: bgMove 16s ease-in-out infinite alternate;
+}
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.home-bg {
+  padding: 0 0 60px 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.section-card {
+  background: rgba(30, 32, 40, 0.72);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #0005, 0 1.5px 8px #ff4c4c22;
+  margin: 32px 0 36px 0;
+  padding: 32px 24px 24px 24px;
+  backdrop-filter: blur(2.5px) saturate(1.2);
+  transition: box-shadow 0.22s;
+}
+.section-card:hover {
+  box-shadow: 0 12px 48px #ff4c4c33, 0 2px 12px #fff2;
+}
+.section-divider {
+  width: 80%;
+  height: 2px;
+  margin: 36px auto 24px auto;
+  background: linear-gradient(90deg, #ff4c4c 0%, #232526 100%);
+  border-radius: 2px;
+  opacity: 0.18;
+}
+@media (max-width: 700px) {
+  .home-bg {
+    padding: 0 0 20px 0;
+  }
+  .section-card {
+    padding: 16px 4px 12px 4px;
+    margin: 18px 0 18px 0;
+  }
+}

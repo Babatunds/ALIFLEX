@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.home-hero-bg {
+  width: 100%;
+  min-height: 260px;
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  margin: 32px 0 0 0;
+  box-shadow: 0 8px 32px #0005;
+}
+.home-hero-bg-img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(0.7) saturate(1.2);
+  transition: opacity 0.7s;
+  opacity: 1;
+  z-index: 1;
+}
+.fade-in { opacity: 1; }
+.fade-out { opacity: 0; }
+.home-hero-glass {
+  min-height: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(120deg, #181818cc 60%, #232526cc 100%);
+  backdrop-filter: blur(2.5px) saturate(1.2);
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+.home-hero-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 0 2px 16px #000a;
+  letter-spacing: 2px;
+}
+.aliflex-logo-animated {
+  color: #ff4c4c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 0 0 16px #ff4c4c99, 0 2px 16px #000a;
+  animation: logoGlow 2.5s infinite alternate;
+}
+@keyframes logoGlow {
+  from { text-shadow: 0 0 16px #ff4c4c99, 0 2px 16px #000a; }
+  to { text-shadow: 0 0 32px #ff4c4c, 0 2px 32px #000a; }
+}
+.home-hero-tagline {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+.home-hero-desc {
+  color: #fff;
+  font-size: 1.1rem;
+  max-width: 480px;
+  text-align: center;
+  opacity: 0.92;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (max-width: 700px) {
+  .home-hero-logo {
+    font-size: 1.3rem;
+  }
+  .home-hero-desc {
+    font-size: 0.95rem;
+    max-width: 90vw;
+  }
+  .home-hero-bg, .home-hero-glass {
+    min-height: 140px;
+  }
+}

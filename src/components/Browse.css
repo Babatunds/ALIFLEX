@@ -1,0 +1,46 @@
+.browse-section {
+  margin: 32px 0;
+}
+.browse-section h3 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-left: 8px;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.browse-section h3::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff4c4c 60%, #e50914 100%);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.movie-list {
+  gap: 22px;
+  padding-bottom: 8px;
+}
+.movie-list--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.movie-list--scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.movie-list--scroll::-webkit-scrollbar {
+  height: 8px;
+  background: #232526;
+}
+.movie-list--scroll::-webkit-scrollbar-thumb {
+  background: #ff4c4c;
+  border-radius: 8px;
+}
