@@ -1,12 +1,64 @@
-# React + Vite
+# ALIFLEX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, Netflix-inspired movie discovery web app built with React, Vite, and TMDb API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern, responsive UI with animated backgrounds
+- Browse trending, top-rated, and upcoming movies
+- Advanced search by genre, rating, and more
+- Watch movie trailers directly in the app
+- Dedicated genre and animation pages
+- Professional Navbar with scroll behavior
+- Feature highlights on the landing page
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router v6
+- TMDb API
+- CSS (custom gradients, animations, responsive design)
+
+## Getting Started
+
+1. Clone the repository:
+   ```powershell
+   git clone https://github.com/Babatunds/ALIFLEX.git
+   ```
+2. Install dependencies:
+   ```powershell
+   npm install
+   ```
+3. Start the development server:
+   ```powershell
+   npm run dev
+   ```
+4. Open your browser at `http://localhost:5173`
+
+## Project Structure
+
+```
+aliflex/
+  public/
+  src/
+    components/
+    pages/
+    assets/
+    utils/
+  index.html
+  package.json
+  vite.config.js
+```
+
+## API Key Setup
+
+This app uses the TMDb API. Add your TMDb API key in the appropriate place in `src/utils/api.js`.
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License.
