@@ -145,7 +145,8 @@
   position: fixed;
   top: 0; left: 0;
   z-index: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .landing-bg-img {
   position: absolute;
@@ -250,5 +251,80 @@
   .landing-desc {
     font-size: 1rem;
     max-width: 90vw;
+  }
+}
+@media (max-width: 500px) {
+  .landing-logo {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .aliflex-logo-animated {
+    font-size: 1.5rem;
+  }
+  .landing-tagline {
+    font-size: 0.9rem;
+  }
+  .landing-desc {
+    font-size: 0.9rem;
+    max-width: 98vw;
+    margin-bottom: 8px;
+  }
+  .play-btn-glow {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+  .landing-features {
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .feature-card {
+    min-width: 120px;
+    max-width: 160px;
+    padding: 12px 8px;
+  }
+  .feature-icon {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  .feature-title {
+    font-size: 0.95rem;
+  }
+  .feature-desc {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 400px) {
+  .landing-logo {
+    font-size: 1rem;
+  }
+  .aliflex-logo-animated {
+    font-size: 1.1rem;
+  }
+  .landing-tagline {
+    font-size: 0.7rem;
+  }
+  .landing-desc {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+  }
+  .play-btn-glow {
+    font-size: 0.7rem;
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+  .feature-card {
+    min-width: 80px;
+    max-width: 120px;
+    padding: 8px 4px;
+  }
+  .feature-icon {
+    font-size: 1rem;
+  }
+  .feature-title {
+    font-size: 0.8rem;
+  }
+  .feature-desc {
+    font-size: 0.7rem;
   }
 }
